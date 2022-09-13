@@ -1,33 +1,10 @@
 #!/usr/bin/python3
-<<<<<<< HEAD
-# 101-safe_function.py
-=======
 # 100-safe_print_integer_err.py
->>>>>>> 637c5c3254bcf28eeb705bb4a6af4b1f8b08fc32
 # Brennan D Baraban <375@holbertonschool.com>
 
 import sys
 
 
-<<<<<<< HEAD
-def safe_function(fct, *args):
-    """Executes a function safely.
-
-    Args:
-    fct: The function to execute.
-    args: Arguments for fct.
-
-    Returns:
-    If an error occurs - None.
-    Otherwise - the result of the call to fct.
-    """
-    try:
-        result = fct(*args)
-        return (result)
-    except:
-        print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
-        return (None)
-=======
 def safe_print_integer_err(value):
     """Prints an integer with "{:d}".format().
 
@@ -47,4 +24,3 @@ def safe_print_integer_err(value):
     except (TypeError, ValueError):
         print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return (False)
->>>>>>> 637c5c3254bcf28eeb705bb4a6af4b1f8b08fc32
